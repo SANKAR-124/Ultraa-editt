@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ULTRAA EDIT</title>
+    <!-- <link rel="stylesheet" href="https://sets.hugeicons.com/YOUR-SET-ID.css" crossorigin="anonymous"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        nav img {
+            width: 250px;
+            height: 80px;
+
+        }
+
+        nav {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav div p {
+            position: absolute;
+            left: 240px;
+            bottom: 0;
+            top: 70px;
+            height: 20px;
+        }
+
+        .one {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .one ul {
+            display: flex;
+            list-style: none;
+            gap: 45px;
+            justify-content: center;
+            align-items: center;
+            /* padding: 5px; */
+            /* padding-top: 25px; */
+        }
+
+        .one ul li {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .two {
+            border: 2px solid black;
+            height: 55px;
+            width: 80px;
+            border-radius: 3px;
+            text-align: center;
+            padding-inline: 25px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+
+
+        }
+
+        .one ul svg {
+            display: flex;
+            align-items: center;
+            /* gap: 5px; */
+            padding-right: 5px;
+            padding-left: 5px;
+        }
+
+        .three {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 100px;
+            vertical-align: baseline;
+            margin-bottom: 50px;
+
+        }
+
+        .three img {
+            display: flex;
+            align-items: center;
+            vertical-align: baseline;
+            padding-top: 10px;
+        }
+
+        .three h1 {
+            font-size: 50px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .four h3 {
+            font-size: 30px;
+            font-weight: 400;
+        }
+
+        .five {
+            height: 500px;
+            width: 1200px;
+            /* border: 2px solid ; */
+            display: inline-block;
+
+        }
+
+        .five :nth-child(3) {
+            /* border: 2px solid black; */
+            height: 35px;
+            width: 350px;
+            display: inline-block;
+            padding-top: 10px;
+            color: white;
+            background-color: rgb(55, 202, 224);
+            border-radius: 5px;
+            margin-top: 40px;
+            cursor: pointer;
+        }
+
+        /* nav svg{ 
+            padding-top: 5px;
+        }*/
+
+        main {
+            height: 600px;
+            width: 1200px;
+            /* border: 2px solid black; */
+            display: inline-block;
+
+        }
+
+        main div {
+            display: flex;
+            gap: 8px;
+
+
+        }
+
+        main div h3 {
+            font-weight: 400;
+            font-size: 20px;
+        }
+
+        main div p {
+            padding-top: 4px;
+        }
+
+        .six {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            row-gap: 50px;
+            justify-items: center;
+            align-items: center;
+            margin-top: 50px;
+            justify-content: center;
+
+        }
+
+        .boxx {
+            height: 200px;
+            width: 300px;
+            /* border: 2px solid black; */
+            background-color: rgba(226, 224, 224, 0.236);
+            text-align: center;
+            align-items: start;
+            justify-content: center;
+            justify-items: center;
+            display: grid;
+            border-radius: 8px;
+        }
+
+        .boxx :first-child {
+            font-weight: 900;
+        }
+
+        .boxx :nth-child(3) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .boxx div a {
+            /* align-items: center; */
+            height: 30px;
+            width: auto;
+            border: 2px solid greenyellow;
+            background-color: greenyellow;
+            display: flex;
+            justify-content: center;
+            border-radius: 5px;
+            padding-inline: 15px;
+        }
+
+        .boxx:nth-child(2) {
+            font-weight: 300;
+        }
+
+        footer {
+            height: 30px;
+            padding-bottom: 30px;
+        }
+
+        @media only screen and (max-width:375px) {
+            .six {
+                justify-content: center;
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+
+            footer {
+                text-align: center;
+                position: fixed;
+                /* right: 15px; */
+                /* background: red; */
+                margin: 10px;
+                bottom: 12px;
+                display: inline-block;
+                height: 50px;
+                align-items: center;
+                display: grid;
+                /* grid-template-columns: 1fr; */
+                left: 20px;
+                padding-top: 30px;
+
+            }
+
+            .five {
+                height: auto;
+                width: 1000px;
+            }
+
+            nav div p {
+                position: absolute;
+                left: 135px;
+                bottom: 0;
+                top: 70px;
+                height: 20px;
+            }
+
+            .one {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .one ul {
+                padding-left: 20px;
+            }
+
+            /* nav{
+                width: auto;
+            } */
+            .one {
+                width: 830px;
+            }
+
+            .one ul {
+                display: flex;
+                list-style: none;
+                gap: 30px;
+                justify-content: center;
+                align-items: center;
+                /* padding: 5px; */
+                /* padding-top: 25px; */
+
+            }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/Background-2.png" alt="logo">
+                <p>By Embarcadero</p>
+            </div>
+            <div class="one">
+                <ul>
+                    <li><span>Products</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18"
+                            height="24" color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg></li>
+                    <li><span>Pricing</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18"
+                            height="24" color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg></li>
+                    <li><span>Resources</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18"
+                            height="24" color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg></li>
+                    <li><span>Our Company</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18"
+                            height="24" color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg></li>
+                    <div class="two"><b>BUY NOW</b></div>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            color="#000000" fill="none">
+                            <defs />
+                            <path fill="#141B34"
+                                d="M1.25,12 C1.25,6.072 6.072,1.25 12,1.25 L12,1.25 C17.928,1.25 22.75,6.072 22.75,12 C22.75,17.928 17.928,22.75 12,22.75 C6.072,22.75 1.25,17.928 1.25,12 Z M15.049,9.75 L8.951,9.75 C8.824,10.461 8.75,11.213 8.75,12 C8.75,12.787 8.824,13.539 8.951,14.25 L15.049,14.25 C15.176,13.539 15.25,12.787 15.25,12 C15.25,11.213 15.176,10.461 15.049,9.75 Z M7.426,9.75 L3.027,9.75 C2.846,10.47 2.75,11.224 2.75,12 C2.75,12.776 2.846,13.53 3.027,14.25 L7.426,14.25 C7.314,13.536 7.25,12.785 7.25,12 C7.25,11.215 7.314,10.464 7.426,9.75 Z M20.973,9.75 L16.575,9.75 C16.687,10.464 16.751,11.215 16.751,12 C16.751,12.785 16.687,13.536 16.575,14.25 L20.973,14.25 C21.154,13.53 21.25,12.776 21.25,12 C21.25,11.224 21.154,10.47 20.973,9.75 Z M10.286,21.091 C9.445,19.922 8.362,18.087 7.743,15.75 L3.545,15.75 C4.762,18.484 7.268,20.523 10.286,21.091 Z M3.545,8.25 L7.742,8.25 C8.361,5.913 9.444,4.079 10.285,2.909 C7.267,3.478 4.762,5.516 3.545,8.25 Z M20.455,8.25 C19.238,5.517 16.733,3.478 13.716,2.91 C14.556,4.079 15.639,5.913 16.258,8.25 Z M13.716,21.09 C16.733,20.522 19.238,18.483 20.455,15.75 L16.258,15.75 C15.639,18.087 14.557,19.921 13.716,21.09 Z M9.309,8.25 L14.691,8.25 C13.966,5.828 12.711,4.028 12,3.143 C11.289,4.028 10.034,5.828 9.309,8.25 Z M12,20.857 C12.711,19.972 13.966,18.172 14.691,15.75 L9.309,15.75 C10.034,18.172 11.289,19.971 12,20.857 Z" />
+                        </svg><span>English</span></li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            color="#000000" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2.25146 11C2.25146 15.82 6.18146 19.75 11.0015 19.75C13.1411 19.75 15.1053 18.9756 16.6283 17.6927L20.4709 21.5354C20.6209 21.6854 20.8109 21.7553 21.0009 21.7553C21.1909 21.7553 21.381 21.6854 21.531 21.5354C21.821 21.2454 21.821 20.7653 21.531 20.4753L17.6888 16.6331C18.9749 15.1093 19.7515 13.1426 19.7515 11C19.7515 6.18 15.8215 2.25 11.0015 2.25C6.18146 2.25 2.25146 6.18 2.25146 11ZM3.75146 11C3.75146 7 7.00146 3.75 11.0015 3.75C15.0015 3.75 18.2515 7 18.2515 11C18.2515 15 15.0015 18.25 11.0015 18.25C7.00146 18.25 3.75146 15 3.75146 11Z"
+                                fill="#141B34" />
+                        </svg></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="five">
+        <div class="three">
+            <h1>Download <b>UltraEdit</b> for windows</h1>
+            <img src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png" alt="logo1">
+        </div>
+        <div class="four">
+            <h3>Download and try UltraEdit before you buy it! This download includes the full Windows version of the
+                text editor.</h3>
+        </div>
+        <div><B>DOWNLOAD MAC OR LINUX VERSION</B></div>
+    </div>
+    <main>
+        <div>
+            <h3>Download UltraEdit</h3>
+            <p>v2025.0 (released 2025-06-06) | Hotfix information</p>
+        </div>
+        <div class="six">
+            <div class="boxx">
+                <p>English</p>
+                <p></p>
+                <div><a href="ue_english_64.exe"> Download 64-bit</a></div>
+            </div>
+            <div class="boxx">
+                <p>Deutsch</p>
+                <p>German</p>
+                <div><a href="ue_english_64.exe"> Download 64-bit</a></div>
+            </div>
+            <div class="boxx">
+                <p>Italiano</p>
+                <p>Italian</p>
+                <div><a href="ue_english_64.exe"> Download 64-bit</a></div>
+            </div>
+            <div class="boxx">
+                <p>Español</p>
+                <p>Spanish</p>
+                <div><a href="ue_english_64.exe"> Download 64-bit</a></div>
+            </div>
+            <div class="boxx">
+                <p>français</p>
+                <p>French</p>
+                <div><a href="ue_english_64.exe"> Download 64-bit</a></div>
+            </div>
+            <div class="boxx">
+                <p>Português brasileiro</p>
+                <p>Brazilian Portuguese</p>
+                <div><a href="ue_english_64.exe"> Download 64-bit</a></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p><B>&copy;SANKAR ONLY</B></p>
+    </footer>
+
+</body>
+
+</html>
